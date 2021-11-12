@@ -25,6 +25,7 @@ export default {
   //   this.getRepo("https://api.github.com/repos/angular/angular.js");
   // },
   // -----------testing--------------
+  
 
   beforeCreate() {
     console.log("beforeCreate", this);

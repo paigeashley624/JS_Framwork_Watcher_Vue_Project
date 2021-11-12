@@ -5,9 +5,42 @@
 </template>
 
 <script>
-import { defineComponent } from "@vue/composition-api";
+import axios from "axios";
 
-export default defineComponent({
-  setup() {},
-});
+export default {
+  data() {
+    return {};
+  },
+
+  beforeCreate() {
+    console.log("beforeCreate", this);
+  },
+  created() {
+    console.log("created");
+  },
+  beforeMount() {
+    console.log("beforeMount");
+  },
+  mounted() {
+    console.log("mounted");
+  },
+  beforeUpdate() {
+    console.log("beforUpdate");
+  },
+  updated() {
+    console.log("updated");
+  },
+  beforeDestroy() {
+    console.log("beforeDestroy");
+  },
+  destroyed() {
+    console.log("destroy");
+  },
+
+  methods: {
+    getSomething(param) {
+      axios.get(param).then;
+    },
+  },
+};
 </script>
