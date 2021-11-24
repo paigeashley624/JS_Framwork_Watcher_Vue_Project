@@ -4,7 +4,7 @@
       Welcome to Javascript Framework Watcher: Stars, Watchers, and Forks https://github.com/acltc/js-framework-watcher
     </h1>
     <h2 v-for="info in repoData" :key="info.id">
-      "info" could be named anything
+      <!-- "info" could be named anything -->
       {{ info.full_name }}
       {{ info.forks_count }}
     </h2>
