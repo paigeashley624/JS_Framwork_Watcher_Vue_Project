@@ -4,8 +4,17 @@
       <router-link to="/">Home</router-link>
       |
       <router-link to="/about">About</router-link>
+      |
+      <router-link to="/bar">Bar Chart</router-link>
     </div>
     <router-view />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <router-view />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
